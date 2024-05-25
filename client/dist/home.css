@@ -1,0 +1,22 @@
+body {
+    background-image: url(pxfuel.jpg);
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+a,
+.btn{
+    transition: all 300ms ease;
+}
+nav{
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* About */
+

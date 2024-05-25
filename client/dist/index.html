@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Predictor</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@100;300;400;500;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body class="text-white bg-black  ">
+    <header>
+        <nav class="desktop-nav bg-transparent bg-opacity-50  shadow-md   shadow-zinc-950  text-white font-bold">
+            <div class="left text-2xl font-semibold">Laptop Price <span class="text-red-500">Predictor.</span></div>
+            <div class="right">
+                <ul class="flex justify-center">
+                    <li class="list-none mr-6"><a
+                            class=" text-xl hover:text-red-500   hover:underline hover:underline-offset-8  "
+                            href="#predict">Predict</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="">
+        <section class="firstSection flex flex-col justify-end mx-14 my-20  items-end " id="home">
+            <div class="RightSection text-5xl  w-4/12 mx-14 ">
+                <div class="text-2xl text-red-500  ">
+                    Predict
+                </div>
+                <span class="text-white font-semibold " id="element"></span>
+                <div class="text-2xl text-red-500">
+                    at your fingertips<span class="text-2xl text-red-500">.</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="button flex mt-28  justify-center ">
+            <a href="#predict"><button
+                    class="btn text-2xl font-medium bg-transparent border p-4 text-white  rounded-3xl   hover:bg-white hover:text-black">
+                    Predict
+                </button></a>
+
+        </div>
+        <div class="section_text_p1 flex justify-center mt-2 mb-10 text-gray-200">Select Specifications and get the best
+            price possible</div>
+        <div class="down-arrow  flex justify-center">
+            <img src="down.png" alt="down-arrow" class="h-20 hover:cursor-crosshair "
+                onclick="location.href='#predict'">
+        </div>
+    </main>
+    <section class="mt-40 mx-24 mb-20" id="predict">
+        <div class="flex justify-center mb-24">
+            <div class="text-2xl font-semibold">Fillup the required fields to <span class="text-red-500">predict</span>
+                prices</div>
+        </div>
+        <div class="flex justify-center mb-3">
+            <div class=" w-10/12 flex justify-center">
+                <form class="" action="/predict" method="post" name="laptopForm">
+                    <label>Brand</label><br>
+                    <select id="brand" name="brand"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border  text-red-600 font-semibold p-3">
+                        <option class="" value="Apple">Apple</option>
+                        <option class="" value="HP">HP</option>
+                        <option class="" value="Acer">Acer</option>
+                        <option class="" value="Asus">Asus</option>
+                        <option class="" value="Dell">Dell</option>
+                        <option class="" value="Lenovo">Lenovo</option>
+                        <option class="" value="Chuwi">Chuwi</option>
+                        <option class="" value="MSI">MSI</option>
+                        <option class="" value="Microsoft">Microsoft</option>
+                        <option class="" value="Toshiba">Toshiba</option>
+                        <option class="" value="Huawei">Huawei</option>
+                        <option class="" value="Xiaomi">Xiaomi</option>
+                        <option class="" value="Vero">Vero</option>
+                        <option class="" value="Razer">Razer</option>
+                        <option class="" value="Mediacom">Mediacom</option>
+                        <option class="" value="Samsung">Samsung</option>
+                        <option class="" value="Google">Google</option>
+                        <option class="" value="Fujitsu">Fujitsu</option>
+                        <option class="" value="LG">LG</option>
+                    </select><br><br>
+
+
+                    <label>Type</label><br>
+                    <select id="type" name="type"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border  text-red-600 font-semibold p-3">
+                        <option class="" value="Notebook">Notebook</option>
+                        <option class="" value="Gaming">Gaming</option>
+                        <option class="" value="Ultrabook">Ultrabook</option>
+                        <option class="" value="2 in 1 Convertible">2 in 1 Convertible</option>
+                        <option class="" value="Workstation">Workstation</option>
+                        <option class="" value="Netbook">Netbook</option>
+                    </select><br><br>
+
+                    <label>Weight</label><br>
+                    <input placeholder="Grams"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border text-red-600 font-semibold p-3"
+                        type="text" name="weight"><br><br>
+
+                    <label>Screen Size</label><br>
+                    <input placeholder="Inches"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border text-red-600 font-semibold p-3"
+                        type="text" name="screen_size"><br><br>
+
+                    <label>Screen Resolution</label><br>
+                    <select id="resolution" name="resolution"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border  text-red-600 font-semibold p-3">
+                        <option class="" value="1920x1080">1920x1080</option>
+                        <option class="" value="1366x768">1366x768</option>
+                        <option class="" value="1600x900">1600x900</option>
+                        <option class="" value="3840x2160">3840x2160</option>
+                        <option class="" value="3200x1800">3200x1800</option>
+                        <option class="" value="2880x1800">2880x1800</option>
+                        <option class="" value="2560x1600">2560x1600</option>
+                        <option class="" value="2560x1440">2560x1440</option>
+                        <option class="" value="2304x1440">2304x1440</option>
+                    </select><br><br>
+
+                    <label>IPS Display ?</label><br>
+                    <select id="ips" name="ips"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border  text-red-600 font-semibold p-3">
+                        <option class="" value="Yes">Yes</option>
+                        <option class="" value="No">No</option>
+                    </select><br><br>
+
+                    <label>Touch-Screen ?</label><br>
+                    <select id="touch" name="touch"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border  text-red-600 font-semibold p-3">
+                        <option class="" value="Yes">Yes</option>
+                        <option class="" value="No">No</option>
+                    </select><br><br>
+
+                    <label>Processor</label><br>
+                    <select id="processor" name="processor"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border  text-red-600 font-semibold p-3">
+                        <option class="" value="Intel Core i7">Intel Core i7</option>
+                        <option class="" value="Intel Core i5">Intel Core i5</option>
+                        <option class="" value="Intel Core i3">Intel Core i3</option>
+                        <option class="" value="AMD">AMD</option>
+                        <option class="" value="Other Intel Processor">Other Intel Processor</option>
+                    </select><br><br>
+
+                    <label>GPU Brand</label><br>
+                    <select id="gpuBrand" name="gpuBrand"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border  text-red-600 font-semibold p-3">
+                        <option class="" value="Intel">Intel</option>
+                        <option class="" value="AMD">AMD</option>
+                        <option class="" value="Nvidia">Nvidia</option>
+                    </select><br><br>
+
+                    <label>RAM</label><br>
+                    <input placeholder="GB"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border text-red-600 font-semibold p-3"
+                        type="number" name="ram"><br><br>
+
+                    <!-- <label>Storage Type</label><br>
+                    <select id="storage" name="storage"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border  text-red-600 font-semibold p-3">
+                        <option class="" value="HDD">HDD</option>
+                        <option class="" value="HDD + SSD">HDD + SSD</option>
+                        <option class="" value="SSD">SSD</option>
+                    </select><br><br> -->
+
+                    <label> HDD Memory </label><br>
+                    <input placeholder="GB"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border text-red-600 font-semibold p-3"
+                        type="number" name="hdd"><br><br>
+
+                    <label> SSD Memory </label><br>
+                    <input placeholder="GB"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border text-red-600 font-semibold p-3"
+                        type="number" name="ssd"><br><br>
+
+                    <!-- <label>GPU (MB)</label><br>
+                    <input class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border text-red-600 font-semibold p-3"
+                        type="text" name="gpu"><br><br> -->
+
+                    <label>Operating System</label><br>
+                    <select id="os" name="os"
+                        class="w-96 bg-zinc-950 rounded-xl border-zinc-700 border  text-red-600 font-semibold p-3">
+                        <option class="" value="Mac">MacOS</option>
+                        <option class="" value="Windows">Windows 10</option>
+                        <option class="" value="Others/No OS/Linux">Linux/Others</option>
+                    </select><br><br>
+
+                    <div class="button flex mt-10 justify-center ">
+                        <button type="submit"
+                            class="btn text-xl font-medium bg-transparent border border-white  px-5 py-2 text-white rounded-lg   hover:bg-red-700 hover:text-black hover:border-red-700">
+                            SUBMIT
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="predicted-price">Approximate Price: </div> -->
+        <div class="text-center predicted-price text-red-700 font-bold text-2xl my-6 " id="predictedPrice"></div>
+        <!-- <script>
+            function validateForm() {
+            var x = document.getElementById["myForm"]["fname"].value;
+            if (x == "") {
+              alert("Name must be filled out");
+              return false;
+            }
+          }
+        </script> -->
+        
+        <script>
+            // Function to handle form submission
+            function handleSubmit(event) {
+                event.preventDefault();
+
+                // Collect form data
+                const formData = new FormData(event.target);
+
+                // Send form data to server using fetch API
+                fetch('/predict', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.text())
+                    .then(data => {
+                        // Update the predicted price element with the received data
+                        document.getElementById('predictedPrice').textContent = 'Approximate Price: ₹' + data;
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            }
+
+            // Attach form submission event listener
+            document.querySelector('form[name="laptopForm"]').addEventListener('submit', handleSubmit);
+        </script>
+
+
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Laptop Prices'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
